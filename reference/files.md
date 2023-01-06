@@ -15,11 +15,12 @@ pageClass: page-reference
 ## Accessing a File
 
 The location of your actual file originals is based on the project's configuration, but you can consistently access them
-via the API using the following URL.
+via the API using the following URL. Remember to enable the visibility of the Directus Files found in Roles and Permissions under System Collections.
 
 ```txt
 example.com/assets/<file-id>
 example.com/assets/1ac73658-8b62-4dea-b6da-529fbc9d01a4
+something.directus.app/assets/1ac73658-8b62-4dea-b6da-529fbc9d01a4
 ```
 
 ::: tip SEO
@@ -29,6 +30,7 @@ You can provide an optional filename after the UUID to optimize for SEO, for exa
 ```txt
 example.com/assets/<file-id>/<filename>
 example.com/assets/1ac73658-8b62-4dea-b6da-529fbc9d01a4/directus-logo.png
+something.directus.app/assets/1ac73658-8b62-4dea-b6da-529fbc9d01a4/directus-logo.png
 ```
 
 This optional filename is also used in the Content-Disposition header when the `?download` query parameter is used.
